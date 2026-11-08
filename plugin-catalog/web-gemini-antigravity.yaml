@@ -1,0 +1,20 @@
+name: web-gemini-antigravity
+repo: https://github.com/ItzJulkar/hermes-web-gemini-antigravity
+sha: ae8d473775361ffd47acdbd4f78253775e221252
+subdir: ""
+description: "Turn every web_search into a Google-grounded Gemini 3.8 search — works with any chat model, via the Antigravity CLI (no API key) or the Gemini API."
+maintainer: ItzJulkar
+tier: community
+category: web
+requires_hermes: ">=0.23.0"
+version: "1.1.0"
+platforms: [windows, linux, macos]
+readme: true
+known_issues:
+  - "cli mode needs the Google Antigravity CLI installed and signed in; api mode needs GEMINI_API_KEY."
+  - "cli mode takes 20-60 s per search (Gemini 3.8 Flash, low effort); api mode is 2-6 s."
+capabilities:
+  provides_tools: []
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []
